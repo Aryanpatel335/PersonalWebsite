@@ -1,5 +1,11 @@
-h1{
+body{
     background-color: black;
-    color: white;
-    margin: auto auto;
+}
+h1{
+    position:fixed;
+    color:white;
+    
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
