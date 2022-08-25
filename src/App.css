@@ -5,6 +5,7 @@
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+  margin-top: 100px;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -26,6 +27,43 @@
 
 .App-link {
   color: #61dafb;
+}
+
+.line-1 {
+  position: relative;
+  top: 50%;
+  width: 24em;
+  margin-top: 100px;
+
+  border-right: 3px solid rgb(255, 255, 255);
+  font-size: 180%;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  transform: translateY(-50%);
+}
+
+/* Animation */
+.anim-typewriter {
+  animation: typewriter 4s steps(44) 1s 1 normal both,
+    blinkTextCursor 1000ms steps(44) infinite normal;
+}
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 17em;
+  }
+}
+@keyframes blinkTextCursor {
+  from,
+  to {
+    border-right-color: transparent;
+  }
+  1% {
+    border-right-color: white;
+  }
 }
 
 @keyframes App-logo-spin {
