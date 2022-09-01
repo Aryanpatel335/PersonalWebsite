@@ -1,3 +1,31 @@
 .App {
   text-align: center;
 }
+
+.home {
+  animation-name: fadeIn;
+  animation-duration: 2s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.loading {
+  animation-name: fadeOut;
+  animation-duration: 2s;
+  animation-delay: 5.5s;
+}
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}

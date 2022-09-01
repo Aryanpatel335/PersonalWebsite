@@ -12,7 +12,7 @@ function App() {
   useEffect(() => {
     setInterval(() => {
       setShowLoading(false);
-    }, 8000);
+    }, 7500);
   });
   return (
     <div className="App">
@@ -22,13 +22,13 @@ function App() {
         </div>
       )}{" "}
       {!showLoading && (
-        <>
+        <div className="home">
           <Nav />
           <Intro />
           <About />
           <Projects />
           <Contact />
-        </>
+        </div>
       )}
     </div>
   );
