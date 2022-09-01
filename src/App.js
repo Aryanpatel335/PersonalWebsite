@@ -1,11 +1,10 @@
 import "./App.css";
+import { Loading } from "./components/Loading/Loading";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <p className="line-1 anim-typewriter">hi my name is aryan patel...</p>
-      </header>
+      <Loading />
     </div>
   );
 }
