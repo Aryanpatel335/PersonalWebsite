@@ -6,7 +6,7 @@ export const About = () => {
       <h1>About</h1>
       <p>studying software engineering at McMaster University</p>
       <p>constantly learning</p>
-      <img src={ap} alt="profile picture" width="310px" height="400px" />
+      <img src={ap} alt="pfp" width="310px" height="400px" />
       <div className="skills">
         <h2>Skills</h2>
         <h3>Languages</h3>
