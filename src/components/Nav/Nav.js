@@ -1,5 +1,6 @@
 import React from "react";
 import logo_AP from "../../resources/logo_AP.png";
+import "./Nav.css";
 export const Nav = () => {
   return (
     <nav id="navbar">
