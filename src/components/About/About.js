@@ -8,7 +8,7 @@ export const About = () => {
       <p>constantly learning</p>
       <img src={ap} alt="pfp" width="310px" height="400px" />
       <div className="skills">
-        <h2>Skills</h2>
+        <h1>Skills</h1>
         <h3>Languages</h3>
         <ul className="languages">
           <li>Java</li>

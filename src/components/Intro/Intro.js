@@ -1,8 +1,8 @@
 import React from "react";
-
+import "./Intro.css";
 export const Intro = () => {
   return (
-    <div>
+    <div className="intro">
       <p>hi, my name is</p>
       <p>aryan patel.</p>
       <p>I am a Software Engineering Student</p>

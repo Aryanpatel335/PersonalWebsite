@@ -2,12 +2,14 @@ import React from "react";
 import "./Projects.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSquareGithub } from "@fortawesome/free-brands-svg-icons";
+import { faLink } from "@fortawesome/free-solid-svg-icons";
 
 export const Projects = () => {
   return (
-    <div>
+    <div id="projectSection">
       <h1>Projects</h1>
-      <div id="projects">
+
+      <div className="projects">
         <div className="projectTile">
           <p className="projectTitle">Product Inventory Manager</p>
           <p className="projectDescription">
@@ -17,14 +19,16 @@ export const Projects = () => {
           <p className="projectLangs">
             Java, Spring/Spring Boot, React, Redux, MySQL
           </p>
-          <a
-            href="https://github.com/Aryanpatel335/product-inventory-manager"
-            target="_blank"
-            rel="noreferrer"
-            className="github"
-          >
-            <FontAwesomeIcon icon={faSquareGithub} />
-          </a>
+          <div className="buttonClick">
+            <a
+              href="https://github.com/Aryanpatel335/product-inventory-manager"
+              target="_blank"
+              rel="noreferrer"
+              className="github"
+            >
+              <FontAwesomeIcon icon={faSquareGithub} />
+            </a>
+          </div>
         </div>
 
         <div className="projectTile">
@@ -36,14 +40,24 @@ export const Projects = () => {
           <p className="projectLangs">
             Python, Flask, Jinja, SQLite, HTML, Bootstrap
           </p>
-          <a
-            href="https://github.com/Aryanpatel335/Post-Pic-Flask-App"
-            target="_blank"
-            rel="noreferrer"
-            className="github"
-          >
-            <FontAwesomeIcon icon={faSquareGithub} />
-          </a>
+          <div className="buttonClick">
+            <a
+              href="https://github.com/Aryanpatel335/Post-Pic-Flask-App"
+              target="_blank"
+              rel="noreferrer"
+              className="github"
+            >
+              <FontAwesomeIcon icon={faSquareGithub} />
+            </a>
+            <a
+              href="https://postpicflask.herokuapp.com/"
+              target="_blank"
+              rel="noreferrer"
+              className="link"
+            >
+              <FontAwesomeIcon icon={faLink} />
+            </a>
+          </div>
         </div>
         <div className="projectTile">
           <p className="projectTitle">PLANNER</p>
@@ -54,14 +68,24 @@ export const Projects = () => {
           <p className="projectLangs">
             JavaScript, CSS, React, Redux, MongoDB, Node.js, Express
           </p>
-          <a
-            href="https://github.com/Aryanpatel335/PLANNER"
-            target="_blank"
-            rel="noreferrer"
-            className="github"
-          >
-            <FontAwesomeIcon icon={faSquareGithub} />
-          </a>
+          <div className="buttonClick">
+            <a
+              href="https://github.com/Aryanpatel335/PLANNER"
+              target="_blank"
+              rel="noreferrer"
+              className="github"
+            >
+              <FontAwesomeIcon icon={faSquareGithub} />
+            </a>
+            <a
+              href="https://plannerapplication.netlify.app/"
+              target="_blank"
+              rel="noreferrer"
+              className="link"
+            >
+              <FontAwesomeIcon icon={faLink} />
+            </a>
+          </div>
         </div>
         <div className="projectTile">
           <p className="projectTitle">Spotify Playlist Maker</p>
@@ -70,14 +94,24 @@ export const Projects = () => {
             playlist that gets added directly to their account
           </p>
           <p className="projectLangs">JavaScript, CSS, React</p>
-          <a
-            href="https://github.com/Aryanpatel335/spotify-playlist-maker"
-            target="_blank"
-            rel="noreferrer"
-            className="github"
-          >
-            <FontAwesomeIcon icon={faSquareGithub} />
-          </a>
+          <div className="buttonClick">
+            <a
+              href="https://github.com/Aryanpatel335/spotify-playlist-maker"
+              target="_blank"
+              rel="noreferrer"
+              className="github"
+            >
+              <FontAwesomeIcon icon={faSquareGithub} />
+            </a>
+            <a
+              href="https://spotifyplaylistmaker.netlify.app/"
+              target="_blank"
+              rel="noreferrer"
+              className="link"
+            >
+              <FontAwesomeIcon icon={faLink} />
+            </a>
+          </div>
         </div>
         <div className="projectTile">
           <p className="projectTitle">Reddit Wrangler</p>
@@ -88,14 +122,24 @@ export const Projects = () => {
           <p className="projectLangs">
             JavaScript, CSS, React, Redux, Reddit JSON API
           </p>
-          <a
-            href="https://github.com/Aryanpatel335/reddit-wrangler"
-            target="_blank"
-            rel="noreferrer"
-            className="github"
-          >
-            <FontAwesomeIcon icon={faSquareGithub} />
-          </a>
+          <div className="buttonClick">
+            <a
+              href="https://github.com/Aryanpatel335/reddit-wrangler"
+              target="_blank"
+              rel="noreferrer"
+              className="github"
+            >
+              <FontAwesomeIcon icon={faSquareGithub} />
+            </a>
+            <a
+              href="https://reddit-wrangler.netlify.app/"
+              target="_blank"
+              rel="noreferrer"
+              className="link"
+            >
+              <FontAwesomeIcon icon={faLink} />
+            </a>
+          </div>
         </div>
       </div>
     </div>

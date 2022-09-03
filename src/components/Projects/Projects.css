@@ -1,4 +1,4 @@
-#projects {
+.projects {
   display: flex;
   flex-wrap: wrap;
 
@@ -25,6 +25,7 @@ a {
 .github {
   color: white;
   font-size: 36px;
+  margin-right: 20px;
 }
 
 .projectDescription {
