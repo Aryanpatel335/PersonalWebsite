@@ -7,7 +7,7 @@ import { Loading } from "./components/Loading/Loading";
 import { Nav } from "./components/Nav/Nav";
 import { Projects } from "./components/Projects/Projects";
 function App() {
-  const [showLoading, setShowLoading] = useState(true);
+  const [showLoading, setShowLoading] = useState(false);
 
   useEffect(() => {
     setInterval(() => {

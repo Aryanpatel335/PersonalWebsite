@@ -1,0 +1,21 @@
+#projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.projectTile {
+  width: 300px;
+  height: 300px;
+  padding: 20px 20px;
+
+  border: rgb(255, 255, 255) 2px solid;
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
+.projectTitle {
+  text-decoration: underline;
+}
+.github {
+  color: white;
+  font-size: 36px;
+}
