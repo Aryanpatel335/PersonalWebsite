@@ -114,7 +114,7 @@ export const Projects = () => {
           </div>
         </div>
         <div className="projectTile">
-          <p className="projectTitle">Reddit Wrangler</p>
+          <p className="projectTitle">Reddit Minimalist</p>
           <p className="projectDescription">
             Minimalistic Reddit mock that lets you surf subreddits that are
             provided by the Reddit JSON API
@@ -124,7 +124,7 @@ export const Projects = () => {
           </p>
           <div className="buttonClick">
             <a
-              href="https://github.com/Aryanpatel335/reddit-wrangler"
+              href="https://github.com/Aryanpatel335/reddit-minimalist"
               target="_blank"
               rel="noreferrer"
               className="github"
