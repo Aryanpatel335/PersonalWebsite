@@ -1,7 +1,7 @@
 import React from "react";
 import logo_AP from "../../resources/logo_AP.png";
 import "./Nav.css";
-
+import resume from "../../resources/Resume_Aryan_Patel_09_22.pdf";
 export const Nav = () => {
   return (
     <nav id="navbar">
@@ -16,6 +16,11 @@ export const Nav = () => {
         </li>
         <li className="nav-item">
           <a href="#contact">contact</a>
+        </li>
+        <li className="nav-item">
+          <a href={resume} target="_blank" rel="noreferrer">
+            resume
+          </a>
         </li>
       </ul>
     </nav>
