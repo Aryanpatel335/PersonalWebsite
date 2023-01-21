@@ -1,7 +1,7 @@
 import React from "react";
 import logo_AP from "../../resources/logo_AP.png";
 import "./Nav.css";
-import resume from "../../resources/Resume_Aryan_Patel_09_22.pdf";
+import resume from "../../resources/Resume_Aryan_Patel_01_23.pdf";
 export const Nav = () => {
   return (
     <nav id="navbar">
