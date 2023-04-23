@@ -1,12 +1,28 @@
 import React from "react";
 import ap from "../../resources/ap.jpg";
+import "./About.css";
 export const About = () => {
   return (
     <div id="about">
       <h1>About</h1>
       <p>studying software engineering at McMaster University</p>
       <p>constantly learning</p>
-      <img src={ap} alt="pfp" width="310px" height="400px" />
+      <img src={ap} alt="pfp" width="400px" height="400px" />
+      <div>
+        <h1>Work Experience</h1>
+        <ul>
+          <li>
+            <h4 className="title">OpenText - Software Developer Intern</h4>
+            <p>Core Case Management Application</p>
+            <p>Java, Spring Boot, Postman, PostgreSQL, Git, Jira, Confluence</p>
+          </li>
+          <li>
+            <h4 className="title">Amelia - Software Developer Intern</h4>
+            <p>iOS application developer</p>
+            <p>ReactNative, Typescript, Redux, Kanban, Git</p>
+          </li>
+        </ul>
+      </div>
       <div className="skills">
         <h1>Skills</h1>
         <h3>Languages</h3>
