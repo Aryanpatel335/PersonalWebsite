@@ -24,7 +24,6 @@
   top: 50%;
   width: 24em;
   margin-top: 100px;
-
   border-right: 3px solid rgb(255, 255, 255);
   font-size: 180%;
   text-align: center;
@@ -44,9 +43,10 @@
     width: 0;
   }
   to {
-    width: 12.5em;
+    width: 18em; /* Adjust this value as needed */
   }
 }
+
 @keyframes blinkTextCursor {
   from,
   to {
@@ -56,12 +56,3 @@
     border-right-color: white;
   }
 }
-
-/* @keyframes loading-logo-spin {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(360deg);
-    }
-  } */

@@ -2,3 +2,24 @@
   /* underline text */
   text-decoration: underline;
 }
+
+.profile-picture {
+  border-radius: 50%; /* This will make the image circular */
+  position: absolute; /* This will take the image out of the normal flow */
+  top: 0; /* This will position the image at the top */
+  right: 0; /* This will position the image at the right */
+}
+
+#about p {
+  font-size: 1.2em; /* This will make the text larger */
+  line-height: 1.5; /* This will increase the space between lines */
+  color: #ffe9e9; /* This will make the text darker */
+  margin-bottom: 1em; /* This will add space below each paragraph */
+}
+
+.profile-picture {
+  border-radius: 50%; /* This will make the image circular */
+  position: absolute; /* This will take the image out of the normal flow */
+  top: 0; /* This will position the image at the top */
+  right: 0; /* This will position the image at the right */
+}

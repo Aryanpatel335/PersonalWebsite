@@ -1,3 +1,44 @@
+#navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* This will center the items vertically */
+  background-color: #000;
+  color: #fff;
+  padding: 1em;
+}
+h1 {
+  font-size: 2em; /* Adjust this value as needed */
+}
+
+.left-side {
+  display: flex;
+  align-items: center;
+}
+
+.profile-picture {
+  border-radius: 50%;
+  margin-right: 0.5em; /* Reduce the right margin */
+}
+.logo {
+  margin-right: 0.5em; /* Add some space to the right of the logo */
+}
+
+#nav-list {
+  display: flex;
+  align-items: center; /* This will center the items horizontally */
+  list-style-type: none;
+}
+
+.nav-item {
+  margin-left: 2em;
+}
+
 .nav-item a {
-  color: white;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1em;
+}
+
+.nav-item a:hover {
+  color: #ddd;
 }
