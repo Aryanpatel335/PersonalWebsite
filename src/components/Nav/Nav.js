@@ -1,7 +1,7 @@
 import React from "react";
 import logo_AP from "../../resources/logo_AP.png";
 import "./Nav.css";
-import resume from "../../resources/Resume_Aryan_Patel_02_23_2_0.pdf";
+// import resume from "../../resources/Resume_Aryan_Patel_02_23_2_0.pdf";
 import ap from "../../resources/ap.jpeg";
 
 export const Nav = () => {
