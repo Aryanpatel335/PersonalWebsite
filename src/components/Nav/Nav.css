@@ -42,3 +42,15 @@ h1 {
 .nav-item a:hover {
   color: #ddd;
 }
+
+@media (max-width: 768px) {
+  .left-side {
+    display: none;
+  }
+  .nav-item {
+    margin-left: 1em;
+  }
+  .nav-item a {
+    font-size: 0.8em;
+  }
+}

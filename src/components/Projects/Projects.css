@@ -35,3 +35,12 @@ a {
 .projectLangs {
   flex: 1;
 }
+
+/* Responsive CSS */
+@media screen and (max-width: 768px) {
+  .projectTile {
+    width: 100%;
+    height: auto;
+    margin: 10px;
+  }
+}

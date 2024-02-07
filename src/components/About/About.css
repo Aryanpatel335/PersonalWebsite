@@ -23,3 +23,22 @@
   top: 0; /* This will position the image at the top */
   right: 0; /* This will position the image at the right */
 }
+
+@media screen and (max-width: 768px) {
+  .title {
+    text-decoration: none; /* Remove underline on smaller screens */
+  }
+
+  .profile-picture {
+    position: static; /* Reset position to normal flow */
+    border-radius: 0; /* Remove circular border */
+    margin-bottom: 1em; /* Add space below the image */
+  }
+
+  #about p {
+    font-size: 1em; /* Decrease font size */
+    line-height: 1.2; /* Decrease line height */
+    color: #ffffff; /* Change text color to black */
+    margin-bottom: 0.5em; /* Decrease space below each paragraph */
+  }
+}

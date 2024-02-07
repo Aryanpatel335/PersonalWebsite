@@ -3,3 +3,54 @@
   font-size: 28px;
   margin-right: 20px;
 }
+
+@media (max-width: 768px) {
+  .icons {
+    font-size: 20px;
+    margin-right: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .icons {
+    font-size: 16px;
+    margin-right: 5px;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .icons,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-size: 20px;
+    margin-right: 10px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .icons,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-size: 16px;
+    margin-right: 5px;
+    text-align: center;
+  }
+}

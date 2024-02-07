@@ -6,21 +6,51 @@ export const About = () => {
     <div id="about">
       <h1>About</h1>
       <p>👋🏽 Hi, my name is Aryan Patel. I like creating solutions with code!</p>
-      <p>🎓 I am currently pursuing a Bachelor's in Software Engineering. (Expected Graduation: April 2025)</p>
-      <p>🏢 Living in Hamilton studying at McMaster University, passionate about software development and making meaningful contributions.</p>
-      <p>📚 I am a Software Engineering Co-op student involved both inside and outside the classroom! I am well-versed in a variety of programming languages and software development frameworks, including Java, JavaScript, Python, and React. I have extensive experience developing both front-end and back-end applications, as well as managing databases.</p>
-      <p>💻 Co-op experience in the area of software engineering, this involves working with a diverse team and a multitude of departments in order to contribute to the codebase actively. Looking into fintech to connect my passion for software development and the finance industry.</p>
-      <p>🕵🏼 Interested in: Backend Development, Web Development, Dev-Ops Engineering, iOS Development, Full Stack Development, and Machine Learning!</p>
-      <p>🏋🏻‍♀️ In my free time you can find me at the gym or working on new trading strategies for my stock trades.</p>
+      <p>
+        🎓 I am currently pursuing a Bachelor's in Software Engineering.
+        (Expected Graduation: April 2025)
+      </p>
+      <p>
+        🏢 Living in Hamilton studying at McMaster University, passionate about
+        software development and making meaningful contributions.
+      </p>
+      <p>
+        📚 I am a Software Engineering Co-op student involved both inside and
+        outside the classroom! I am well-versed in a variety of programming
+        languages and software development frameworks, including Java,
+        JavaScript, Python, and React. I have extensive experience developing
+        both front-end and back-end applications, as well as managing databases.
+      </p>
+      <p>
+        💻 Co-op experience in the area of software engineering, this involves
+        working with a diverse team and a multitude of departments in order to
+        contribute to the codebase actively. Looking into fintech to connect my
+        passion for software development and the finance industry.
+      </p>
+      <p>
+        🕵🏼 Interested in: Backend Development, Web Development, Dev-Ops
+        Engineering, iOS Development, Full Stack Development, and Machine
+        Learning!
+      </p>
+      <p>
+        🏋🏻‍♀️ In my free time you can find me at the gym or working on new trading
+        strategies for my stock trades.
+      </p>
       {/* make this a circle */}
       {/* <img className="profile-picture" src={ap} alt="pfp" width="400px" height="400px" /> */}
-      <div>
+      <div id="experience">
         <h1>Work Experience</h1>
         <ul>
           <li>
             <h4 className="title">Univeris - Software Engineer Intern</h4>
-            <p>Professional Services -- Enterprise Wealth Management System (EWMS)</p>
-            <p>Java, JavaScript, Spring Boot, Postman, MS SQL Server, Git, Jira, Confluence</p>
+            <p>
+              Professional Services -- Enterprise Wealth Management System
+              (EWMS)
+            </p>
+            <p>
+              Java, JavaScript, Spring Boot, Postman, MS SQL Server, Git, Jira,
+              Confluence
+            </p>
           </li>
           <li>
             <h4 className="title">OpenText - Software Engineer Intern</h4>

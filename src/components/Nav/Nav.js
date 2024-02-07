@@ -9,7 +9,13 @@ export const Nav = () => {
     <nav id="navbar">
       <div className="left-side">
         {/* <img className="profile-picture" src={ap} alt="pfp" width="60px" height="60px" /> */}
-        <img className="logo" src={logo_AP} alt="logo" width="60px" height="60px" />
+        <img
+          className="logo"
+          src={logo_AP}
+          alt="logo"
+          width="60px"
+          height="60px"
+        />
         <h1>aryan patel</h1>
       </div>
       <ul id="nav-list">
@@ -17,16 +23,19 @@ export const Nav = () => {
           <a href="#about">about</a>
         </li>
         <li className="nav-item">
+          <a href="#experience">experience</a>
+        </li>
+        <li className="nav-item">
           <a href="#projectSection">projects</a>
         </li>
         <li className="nav-item">
           <a href="#contact">contact</a>
         </li>
-        <li className="nav-item">
+        {/* <li className="nav-item">
           <a href={resume} target="_blank" rel="noreferrer">
             resume
           </a>
-        </li>
+        </li> */}
       </ul>
     </nav>
   );
