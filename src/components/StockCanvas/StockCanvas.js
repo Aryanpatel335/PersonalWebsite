@@ -7,65 +7,83 @@ const StockCanvas = () => {
   useEffect(() => {
     const canvas = canvasRef.current;
     const ctx = canvas.getContext("2d");
-    let animationFrameId;
+    let intervalId;
 
     // Set the canvas width and height to the window width and height
-    canvas.width = window.innerWidth;
-    canvas.height = window.innerHeight;
+    const resizeCanvas = () => {
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+    };
+
+    // Resize the canvas when the window resizes
+    window.addEventListener("resize", resizeCanvas);
+    resizeCanvas();
+
+    // Define the candle width and max height
+    const candleWidth = 10;
+    const maxHeight = 75;
 
     // Create a candle class
     class Candle {
-      constructor(x, y, width, height) {
+      constructor(x, y, width, height, color) {
         this.x = x;
         this.y = y;
         this.width = width;
         this.height = height;
-        this.color = Math.random() < 0.5 ? "green" : "red";
+        this.color = color;
       }
       draw() {
         ctx.beginPath();
-        ctx.fillStyle = this.color;
-        ctx.strokeStyle = this.color;
+        const wickHeight = this.height * 0.2;
+        const bodyHeight = this.height * 0.6;
+        const bodyY = this.y + wickHeight / 2;
         // Draw the wick
-        const wickX = this.x + this.width / 2;
-        ctx.moveTo(wickX, this.y);
-        ctx.lineTo(wickX, this.y + this.height);
+        ctx.moveTo(this.x + this.width / 2, this.y);
+        ctx.lineTo(this.x + this.width / 2, this.y + this.height);
+        ctx.strokeStyle = this.color;
         ctx.stroke();
         // Draw the body
-        ctx.fillRect(
-          this.x,
-          this.y + this.height * 0.1, // Adjust this value to change the candle body position
-          this.width,
-          this.height * 0.8 // Adjust this value to change the candle body height
-        );
+        ctx.fillStyle = this.color;
+        ctx.fillRect(this.x, bodyY, this.width, bodyHeight);
         ctx.closePath();
+      }
+      update() {
+        // Change the height of the candle randomly
+        this.height = Math.random() * maxHeight;
       }
     }
 
     // Create an array of candles
     let candles = [];
-    const candleWidth = 10; // Width of the candle
-    for (let i = 0; i < canvas.width / candleWidth; i++) {
-      let x = i * (candleWidth + 5); // +5 for spacing between candles
-      let height = Math.random() * canvas.height * 0.1;
-      let y = canvas.height / 2 - height / 2; // Center the candles
-      candles.push(new Candle(x, y, candleWidth, height));
+    for (let i = 0; i < 150; i++) {
+      let x = Math.random() * (canvas.width - candleWidth);
+      let y = Math.random() * (canvas.height - maxHeight);
+      let height = Math.random() * maxHeight;
+      let color = Math.random() < 0.5 ? "#76b852" : "#e74c3c"; // green or red
+      candles.push(new Candle(x, y, candleWidth, height, color));
     }
 
     // Create an update function
-    function update() {
+    const update = () => {
       ctx.clearRect(0, 0, canvas.width, canvas.height);
       candles.forEach((candle) => {
+        candle.update();
         candle.draw();
       });
-      animationFrameId = window.requestAnimationFrame(update);
-    }
+    };
 
+    // Start the animation
     update();
-    return () => window.cancelAnimationFrame(animationFrameId);
+    intervalId = setInterval(update, 3000); // Update every 2 seconds
+
+    // Cleanup function to cancel the animation when the component unmounts
+    return () => {
+      window.removeEventListener("resize", resizeCanvas);
+      clearInterval(intervalId);
+    };
   }, []);
 
-  return <canvas ref={canvasRef} className="stock-canvas"></canvas>;
+  return <canvas ref={canvasRef} className="stock-canvas" />;
 };
 
 export default StockCanvas;
