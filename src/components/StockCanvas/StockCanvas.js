@@ -55,7 +55,8 @@ const StockCanvas = () => {
 
     // Create an array of candles
     let candles = [];
-    for (let i = 0; i < 150; i++) {
+    let total_candles = window.innerWidth < 768 ? 35 : 150;
+    for (let i = 0; i < total_candles; i++) {
       let x = Math.random() * (canvas.width - candleWidth);
       let y = Math.random() * (canvas.height - maxHeight);
       let height = Math.random() * maxHeight;
