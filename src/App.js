@@ -7,6 +7,8 @@ import { Intro } from "./components/Intro/Intro";
 import { Loading } from "./components/Loading/Loading";
 import { Nav } from "./components/Nav/Nav";
 import { Projects } from "./components/Projects/Projects";
+import Experience from "./components/Experience/Experience.js";
+import Skills from "./components/Skills/Skills.js";
 function App() {
   const [showLoading, setShowLoading] = useState(true);
 
@@ -27,6 +29,8 @@ function App() {
           <Nav />
           <Intro />
           <About />
+          <Experience />
+          <Skills />
           <Projects />
           <Contact />
           <Footer />

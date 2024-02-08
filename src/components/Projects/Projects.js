@@ -7,7 +7,7 @@ import { faLink } from "@fortawesome/free-solid-svg-icons";
 export const Projects = () => {
   return (
     <div id="projectSection">
-      <h1>Projects</h1>
+      <h1>projects</h1>
 
       <div className="projects">
         <div className="projectTile">

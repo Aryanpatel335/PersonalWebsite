@@ -1,44 +1,28 @@
-.title {
-  /* underline text */
-  text-decoration: underline;
+.simplifiedAbout {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  color: #ffffff;
 }
 
-.profile-picture {
-  border-radius: 50%; /* This will make the image circular */
-  position: absolute; /* This will take the image out of the normal flow */
-  top: 0; /* This will position the image at the top */
-  right: 0; /* This will position the image at the right */
+.simplifiedAbout h1 {
+  color: #ffffff;
+  text-align: center;
 }
 
-#about p {
-  font-size: 1.2em; /* This will make the text larger */
-  line-height: 1.5; /* This will increase the space between lines */
-  color: #ffe9e9; /* This will make the text darker */
-  margin-bottom: 1em; /* This will add space below each paragraph */
+.profileImage {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  display: block;
+  margin: 20px auto;
 }
 
-.profile-picture {
-  border-radius: 50%; /* This will make the image circular */
-  position: absolute; /* This will take the image out of the normal flow */
-  top: 0; /* This will position the image at the top */
-  right: 0; /* This will position the image at the right */
+.simplifiedAbout p {
+  text-align: justify;
+  line-height: 1.6;
 }
 
-@media screen and (max-width: 768px) {
-  .title {
-    text-decoration: none; /* Remove underline on smaller screens */
-  }
-
-  .profile-picture {
-    position: static; /* Reset position to normal flow */
-    border-radius: 0; /* Remove circular border */
-    margin-bottom: 1em; /* Add space below the image */
-  }
-
-  #about p {
-    font-size: 1em; /* Decrease font size */
-    line-height: 1.2; /* Decrease line height */
-    color: #ffffff; /* Change text color to black */
-    margin-bottom: 0.5em; /* Decrease space below each paragraph */
-  }
+.simplifiedAbout p strong {
+  color: #76b852;
 }
