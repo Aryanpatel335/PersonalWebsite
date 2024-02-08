@@ -1,13 +1,11 @@
+/* Nav.css */
 #navbar {
   display: flex;
   justify-content: space-between;
-  align-items: center; /* This will center the items vertically */
-  background-color: #000;
-  color: #fff;
-  padding: 1em;
-}
-h1 {
-  font-size: 2em; /* Adjust this value as needed */
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #000000;
+  color: white;
 }
 
 .left-side {
@@ -15,42 +13,57 @@ h1 {
   align-items: center;
 }
 
-.profile-picture {
-  border-radius: 50%;
-  margin-right: 0.5em; /* Reduce the right margin */
+.left-side .logo {
+  margin-right: 15px;
 }
-.logo {
-  margin-right: 0.5em; /* Add some space to the right of the logo */
+
+.left-side h1 {
+  font-size: 1.5em;
+  font-weight: normal;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 #nav-list {
-  display: flex;
-  align-items: center; /* This will center the items horizontally */
   list-style-type: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
 }
 
-.nav-item {
-  margin-left: 2em;
+#nav-list .nav-item {
+  margin-left: 20px;
 }
 
-.nav-item a {
-  color: #fff;
+#nav-list .nav-item a {
   text-decoration: none;
+  color: white;
   font-size: 1em;
+  padding: 5px 10px;
+  transition: background-color 0.3s;
 }
 
-.nav-item a:hover {
-  color: #ddd;
+#nav-list .nav-item a:hover {
+  background-color: #000000;
+  border-radius: 5px;
 }
 
+/* Responsive design for smaller screens */
 @media (max-width: 768px) {
+  #navbar {
+    flex-direction: column;
+  }
+
   .left-side {
-    display: none;
+    justify-content: center;
+    margin-bottom: 10px;
   }
-  .nav-item {
-    margin-left: 1em;
+
+  #nav-list {
+    justify-content: center;
   }
-  .nav-item a {
-    font-size: 0.8em;
+
+  #nav-list .nav-item {
+    margin: 5px 0; /* Stack the items vertically with space between */
   }
 }

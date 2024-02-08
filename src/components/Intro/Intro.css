@@ -1,24 +1,44 @@
 .intro {
-  height: 100vh; /* This makes the div cover the full height of the viewport */
-  width: 100vw; /* This makes the div cover the full width of the viewport */
   display: flex;
   flex-direction: column;
-  justify-content: center; /* This centers the content vertically */
-  align-items: center; /* This centers the content horizontally */
-  color: white; /* Assuming you want the text in white */
-  background-color: black; /* Keeps the background black */
-  margin: 0; /* Removes any default margin */
-  padding: 0; /* Removes any default padding */
+  align-items: center;
+  justify-content: center; /* Centers content vertically */
+  height: 100vh; /* This will make your intro take up 100% of the viewport height */
+  color: #ffffff;
+  background-color: #333;
+  text-align: center;
+  margin: 0; /* Ensure there are no margins pushing the content */
+  padding: 0; /* Ensure there's no padding inside .intro */
+  box-sizing: border-box; /* Ensures padding and borders are included in the width and height */
+  overflow: hidden; /* Prevents content from overflowing */
+  position: relative; /* Allows for absolute positioning of the canvas */
+  z-index: 1; /* Ensures the intro content is above the canvas */
+}
+.intro img {
+  width: 50vw; /* This will be 50% of the viewport width */
+  max-width: 240px; /* Maximum width to prevent it from getting too big */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 10% 35% 10% 35%/35% 10% 35% 10%; /* Unique shape */
+  margin-bottom: 2vw; /* Space between image and text, responsive */
+  transition: transform 0.3s ease; /* Smooth transition for transform properties */
+}
+.intro img:hover {
+  transform: scale(1.1); /* Increase the image size to 110% on hover */
+}
+.intro p {
+  text-align: center; /* Centers text within the element */
+  margin: 1vh auto; /* Vertical margins and horizontal auto for centering */
+  font-size: 1.25vw; /* Responsive font size */
+  width: 100%; /* Ensures the paragraph takes the full width of its container */
 }
 
-@media screen and (max-width: 768px) {
-  .intro {
-    padding: 0px 10px;
+/* Media query for smaller devices */
+@media (max-width: 768px) {
+  .intro img {
+    width: 40vw; /* Larger size on smaller screens */
   }
-}
 
-@media screen and (max-width: 480px) {
-  .intro {
-    padding: 0px 5px;
+  .intro p {
+    font-size: 5vw; /* Slightly larger text on smaller screens */
   }
 }
