@@ -1,5 +1,5 @@
 import React from "react";
-import ap from "../../resources/ap.jpeg";
+// import ap from "../../resources/ap.jpeg";
 import "./About.css";
 export const About = () => {
   return (
