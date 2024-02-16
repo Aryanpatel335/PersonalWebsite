@@ -1,5 +1,4 @@
 import React from "react";
-import "./Skills.css"; // Make sure to reference the updated CSS file
 
 const Skills = () => {
   return (

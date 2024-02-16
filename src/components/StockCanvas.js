@@ -1,5 +1,4 @@
 import React, { useEffect, useRef } from "react";
-import "./StockCanvas.css";
 
 const StockCanvas = () => {
   const canvasRef = useRef(null);

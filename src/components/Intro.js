@@ -1,8 +1,7 @@
 import React from "react";
-import "./Intro.css";
-import cartoonImage from "../../resources/cartoon.png";
-import StockCanvas from "../StockCanvas/StockCanvas";
-export const Intro = () => {
+import cartoonImage from "../resources/cartoon.png";
+import StockCanvas from "./StockCanvas";
+const Intro = () => {
   return (
     <div className="intro">
       <StockCanvas />
@@ -13,3 +12,5 @@ export const Intro = () => {
     </div>
   );
 };
+
+export default Intro;

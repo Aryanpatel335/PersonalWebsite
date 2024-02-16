@@ -1,7 +1,7 @@
 import React from "react";
 // import ap from "../../resources/ap.jpeg";
-import "./About.css";
-export const About = () => {
+
+const About = () => {
   return (
     <div id="about" className="simplifiedAbout">
       <h1>about</h1>
@@ -26,3 +26,5 @@ export const About = () => {
     </div>
   );
 };
+
+export default About;

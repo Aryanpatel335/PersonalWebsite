@@ -1,5 +1,5 @@
 import React from "react";
-import "./Contact.css";
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faEnvelope,
@@ -7,7 +7,7 @@ import {
   faPhone,
 } from "@fortawesome/free-solid-svg-icons";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
-export const Contact = () => {
+const Contact = () => {
   return (
     <div id="contact">
       <h1>Contact</h1>
@@ -45,3 +45,5 @@ export const Contact = () => {
     </div>
   );
 };
+
+export default Contact;

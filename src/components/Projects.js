@@ -1,10 +1,9 @@
 import React from "react";
-import "./Projects.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSquareGithub } from "@fortawesome/free-brands-svg-icons";
 import { faLink } from "@fortawesome/free-solid-svg-icons";
 
-export const Projects = () => {
+const Projects = () => {
   return (
     <div id="projectSection">
       <h1>projects</h1>
@@ -145,3 +144,5 @@ export const Projects = () => {
     </div>
   );
 };
+
+export default Projects;

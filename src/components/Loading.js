@@ -1,6 +1,6 @@
 import React from "react";
-import "./Loading.css";
-export const Loading = () => {
+
+const Loading = () => {
   return (
     <div>
       <header className="loading-header">
@@ -10,3 +10,5 @@ export const Loading = () => {
     </div>
   );
 };
+
+export default Loading;
