@@ -9,6 +9,7 @@ import { Nav } from "./components/Nav/Nav";
 import { Projects } from "./components/Projects/Projects";
 import Experience from "./components/Experience/Experience.js";
 import Skills from "./components/Skills/Skills.js";
+
 function App() {
   const [showLoading, setShowLoading] = useState(true);
 
