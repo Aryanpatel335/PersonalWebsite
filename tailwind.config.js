@@ -6,6 +6,9 @@ module.exports = {
       fontFamily: {
         mono: ['"IBM Plex Mono"', "monospace"],
       },
+      colors: {
+        gray: "#4e4e4e",
+      },
     },
   },
   plugins: [],

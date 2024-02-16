@@ -12,7 +12,7 @@ const Nav = () => {
 
   return (
     <div className="flex justify-between items-center h-24 max-w-[1240px] mx-auto px-4 text-white">
-      <div className="flex justify-between items-center">
+      <div className="flex justify-between items-center ">
         {!nav ? (
           <>
             <img className="logo w-12 h-12 mr-5" src={logo_AP} alt="logo" />
