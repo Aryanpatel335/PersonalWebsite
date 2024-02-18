@@ -56,7 +56,7 @@ const Projects = () => {
   ];
 
   return (
-    <div id="projectSection" className="bg-black text-white p-10">
+    <div id="projects" className="bg-black text-white p-10">
       <h1 className="text-4xl text-center font-bold mb-10">projects</h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
         {projectData.map((project, index) => (
