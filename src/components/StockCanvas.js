@@ -59,7 +59,7 @@ const StockCanvas = () => {
       let x = Math.random() * (canvas.width - candleWidth);
       let y = Math.random() * (canvas.height - maxHeight);
       let height = Math.random() * maxHeight;
-      let color = Math.random() < 0.5 ? "#76b852" : "#e74c3c"; // green or red
+      let color = Math.random() < 0.5 ? "#22c55e" : "#e74c3c"; // green or red
       candles.push(new Candle(x, y, candleWidth, height, color));
     }
 
@@ -74,7 +74,7 @@ const StockCanvas = () => {
 
     // Start the animation
     update();
-    intervalId = setInterval(update, 3000); // Update every 2 seconds
+    intervalId = setInterval(update, 3000);
 
     // Cleanup function to cancel the animation when the component unmounts
     return () => {

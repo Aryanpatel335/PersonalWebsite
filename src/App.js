@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 // Ensure you import Tailwind CSS in your project entry file
 //import all components
-import Nav from "./components/Nav";
+// import Nav from "./components/Nav";
 import Intro from "./components/Intro";
 import About from "./components/About";
 import Experience from "./components/Experience";
@@ -12,17 +12,23 @@ import Footer from "./components/Footer";
 import Loading from "./components/Loading";
 
 function App() {
-  const [showLoading, setShowLoading] = useState(true);
+  const [showLoading, setShowLoading] = useState(false);
+  const [fadeEffect, setFadeEffect] = useState(true);
 
   useEffect(() => {
     const timer = setInterval(() => {
       setShowLoading(false);
+      setFadeEffect(true);
     }, 7500);
     return () => clearInterval(timer); // Cleanup the interval on component unmount
   }, []);
 
   return (
-    <div className="text-center bg-black text-white font-mono">
+    <div
+      className={`text-center bg-black text-white font-mono overflow-x-hidden ${
+        fadeEffect ? "animate-fadeIn" : ""
+      } min-h-screen`}
+    >
       {showLoading ? (
         <div className="loading opacity-0 animate-fadeIn">
           {" "}
@@ -31,7 +37,7 @@ function App() {
         </div>
       ) : (
         <div className="home opacity-100 animate-fadeOut">
-          <Nav />
+          {/* <Nav /> */}
           <Intro />
           <About />
           <Experience />
