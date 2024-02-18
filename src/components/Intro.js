@@ -10,16 +10,13 @@ const Intro = () => {
       <div className="absolute top-0 left-0 z-20 w-full">
         <Nav />
       </div>
-      <div className="flex justify-center items-center h-full">
+      <div className="flex justify-center items-center h-[110vh]">
         {/* StockCanvas is positioned absolutely to fill the entire screen but under the content */}
         <div className="absolute top-0 left-0 right-0 bottom-0 z-0">
           <StockCanvas />
         </div>
         {/* Centered content accounting for Nav, using padding or margin if necessary */}
-        <div
-          className="z-10 flex flex-col items-center"
-          style={{ paddingTop: "var(--nav-height, 96px)" }}
-        >
+        <div className="z-10 flex flex-col items-center">
           <img
             src={cartoonImage}
             alt="Cartoon representation"
