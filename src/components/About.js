@@ -29,7 +29,7 @@ const About = () => {
         <p className="text-justify leading-relaxed mb-4">
           With hands-on experience in{" "}
           <strong className="text-green">
-            Java, JavaScript, Python, and React
+            Java, JavaScript, TypeScript, Python, and React
           </strong>
           , I'm crafting solutions from front to back, exploring the vast realms
           of web and backend development, and more. When not coding, you'll
