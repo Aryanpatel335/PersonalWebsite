@@ -80,32 +80,36 @@ const Nav = () => {
             <a
               href="#about"
               className="text-white no-underline hover:underline"
+              onClick={() => setNav(false)}
             >
-              About
+              about
             </a>
           </li>
           <li className="p-4 border-b border-gray-600">
             <a
               href="#experience"
               className="text-white no-underline hover:underline"
+              onClick={() => setNav(false)}
             >
-              Experience
+              experience
             </a>
           </li>
           <li className="p-4 border-b border-gray-600">
             <a
               href="#projects"
               className="text-white no-underline hover:underline"
+              onClick={() => setNav(false)}
             >
-              Projects
+              projects
             </a>
           </li>
           <li className="p-4 border-b border-gray-600">
             <a
               href="#contact"
               className="text-white no-underline hover:underline"
+              onClick={() => setNav(false)}
             >
-              Contact
+              contact
             </a>
           </li>
         </ul>
